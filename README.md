@@ -1,6 +1,4 @@
-<p align="center"><img src="assets/nody-wordmark.svg" alt="Nody" width="142" height="40"></p>
-
-# Nody
+<p align="center"><img src="packages/ui/logo/nody-light.png" alt="Nody"></p>
 
 Nody is organized as a monorepo. Deployable applications live in `apps/`; shared capabilities live in `packages/` and are consumed by those applications.
 
