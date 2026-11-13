@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Nody UI — Layout & tokens</title><link rel="icon" href="logo/nody-icon-dark.png" type="image/png"><link rel="stylesheet" href="system.css"></head>
+<body data-page="layout">
+  <div class="system-shell"><aside class="sidebar" id="system-sidebar" aria-label="Design system navigation"></aside><main class="system-main">
+    <header class="topbar"><button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="true"><span class="material-symbols-outlined" aria-hidden="true">menu</span></button><div class="breadcrumb"><span>Nody UI</span><span>/</span><strong>Layout & tokens</strong></div><span class="topbar-meta">Foundations · Layout</span></header>
+    <div class="page-content">
+      <div class="page-eyebrow">Foundations / Layout</div><h1 class="page-title">Layout and spatial tokens</h1><p class="page-lead">A compact 4px-based spacing scale supports a calm page canvas, predictable controls and flexible workspace views.</p>
+      <section class="section"><div class="section-head"><h2>Spacing scale</h2><span class="section-note">Values from tokens.css</span></div><article class="card"><div class="space-sample"><code>space-1 · 4</code><span class="space-bar" style="width:var(--nody-space-1)"></span></div><div class="space-sample"><code>space-2 · 8</code><span class="space-bar" style="width:var(--nody-space-2)"></span></div><div class="space-sample"><code>space-3 · 12</code><span class="space-bar" style="width:var(--nody-space-3)"></span></div><div class="space-sample"><code>space-4 · 16</code><span class="space-bar" style="width:var(--nody-space-4)"></span></div><div class="space-sample"><code>space-6 · 24</code><span class="space-bar" style="width:var(--nody-space-6)"></span></div><div class="space-sample"><code>space-8 · 32</code><span class="space-bar" style="width:var(--nody-space-8)"></span></div><div class="space-sample"><code>space-12 · 48</code><span class="space-bar" style="width:var(--nody-space-12)"></span></div></article></section>
+      <section class="section"><div class="section-head"><h2>Radius, borders and elevation</h2><span class="section-note">Use depth sparingly</span></div><div class="foundation-grid">
+        <article class="foundation-card"><h3>Radius</h3><div class="radius-sample"><div class="radius-box" style="border-radius:var(--nody-radius-sm)"></div><div class="radius-box" style="border-radius:var(--nody-radius-md)"></div><div class="radius-box" style="border-radius:var(--nody-radius-lg)"></div><div class="radius-box" style="border-radius:var(--nody-radius-pill)"></div></div><div class="token-value">5 / 8 / 12 / pill</div></article>
+        <article class="foundation-card"><h3>Whisper border</h3><div style="height:58px;display:grid;place-items:center;border:1px solid var(--nody-border);border-radius:var(--nody-radius-md);color:var(--nody-fg-secondary);font-size:10px">1px · --nody-border</div><div class="token-value">Use lines to clarify structure</div></article>
+        <article class="foundation-card"><h3>Elevation</h3><div class="elevation-sample" style="box-shadow:var(--nody-shadow-card)">Card shadow</div><div class="token-value">--nody-shadow-card · --nody-shadow-menu</div></article>
+      </div></section>
+      <section class="section"><div class="section-head"><h2>Responsive ranges</h2><span class="section-note">Starting points for layout shifts</span></div><article class="card"><div class="breakpoint-list">
+        <div class="breakpoint-row"><strong>Phone</strong><code>≤ 620px</code><span class="breakpoint-track" style="width:28%"></span></div>
+        <div class="breakpoint-row"><strong>Tablet</strong><code>621–850px</code><span class="breakpoint-track" style="width:56%"></span></div>
+        <div class="breakpoint-row"><strong>Desktop</strong><code>&gt; 850px</code><span class="breakpoint-track" style="width:100%"></span></div>
+      </div><p class="help-text" style="margin:12px 0 0">Use content-driven breakpoints when a specific component needs to reflow sooner.</p></article></section>
+      <section class="section"><div class="section-head"><h2>Layer order and motion</h2></div><div class="card-grid"><article class="card"><div class="metric">Layers</div><div class="token-value">Sticky bar · 5<br>Menu · 10<br>Dialog · 30<br>Toast · 40</div></article><article class="card"><div class="metric">Motion</div><div class="token-value">Standard · 160ms<br>Ease · cubic-bezier(.2,0,0,1)<br>Honor reduced motion preference</div></article></div></section>
+    </div>
+  </main></div>
+  <script src="system.js"></script>
+</body>
+</html>

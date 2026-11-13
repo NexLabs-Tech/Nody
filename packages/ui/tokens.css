@@ -1,0 +1,60 @@
+:root {
+  color-scheme: light;
+  /* Core surfaces and text, adapted from the local Notion reference. */
+  --nody-bg: #fff;
+  --nody-surface: #f7f6f3;
+  --nody-surface-raised: #fff;
+  --nody-surface-hover: #efeeeb;
+  --nody-fg: #252421;
+  --nody-fg-secondary: #66635f;
+  --nody-fg-muted: #96918a;
+  --nody-border: rgba(37, 36, 33, .12);
+  --nody-border-soft: rgba(37, 36, 33, .075);
+  --nody-accent: #2878d4;
+  --nody-accent-hover: #1e65b7;
+  --nody-accent-soft: #eaf3fd;
+  --nody-accent-on: #fff;
+  --nody-success: #25864a;
+  --nody-success-soft: #eaf5ed;
+  --nody-warning: #a86413;
+  --nody-warning-soft: #fbf1df;
+  --nody-danger: #c33d38;
+  --nody-danger-soft: #fae9e7;
+
+  --nody-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --nody-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --nody-text-xs: 11px;
+  --nody-text-sm: 13px;
+  --nody-text-base: 14px;
+  --nody-text-lg: 18px;
+  --nody-text-xl: 24px;
+  --nody-text-2xl: 32px;
+  --nody-leading: 1.5;
+  --nody-leading-tight: 1.2;
+
+  --nody-space-1: 4px;
+  --nody-space-2: 8px;
+  --nody-space-3: 12px;
+  --nody-space-4: 16px;
+  --nody-space-5: 20px;
+  --nody-space-6: 24px;
+  --nody-space-8: 32px;
+  --nody-space-10: 40px;
+  --nody-space-12: 48px;
+
+  --nody-radius-sm: 5px;
+  --nody-radius-md: 8px;
+  --nody-radius-lg: 12px;
+  --nody-radius-pill: 999px;
+  --nody-shadow-card: 0 2px 8px rgba(34, 31, 26, .035), 0 1px 2px rgba(34, 31, 26, .025);
+  --nody-shadow-menu: 0 12px 32px rgba(34, 31, 26, .12), 0 2px 6px rgba(34, 31, 26, .06);
+  --nody-focus: 0 0 0 3px rgba(40, 120, 212, .22);
+  --nody-duration: 160ms;
+  --nody-ease: cubic-bezier(.2, 0, 0, 1);
+  --nody-sidebar-width: 252px;
+  --nody-content-max: 1120px;
+  --nody-z-sticky: 5;
+  --nody-z-menu: 10;
+  --nody-z-dialog: 30;
+  --nody-z-toast: 40;
+}

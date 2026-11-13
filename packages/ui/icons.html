@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Nody UI — Icons</title><link rel="icon" href="logo/nody-icon-dark.png" type="image/png"><link rel="stylesheet" href="system.css"></head>
+<body data-page="icons">
+  <div class="system-shell"><aside class="sidebar" id="system-sidebar" aria-label="Design system navigation"></aside><main class="system-main">
+    <header class="topbar"><button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="true"><span class="material-symbols-outlined" aria-hidden="true">menu</span></button><div class="breadcrumb"><span>Nody UI</span><span>/</span><strong>Icons</strong></div><span class="topbar-meta">Foundations · Icons</span></header>
+    <div class="page-content">
+      <div class="page-eyebrow">Foundations / Icons</div><h1 class="page-title">Google Material Symbols</h1><p class="page-lead">A flexible icon family for navigation, pages and actions. Adjust fill and weight below to see the change across the whole gallery.</p>
+      <section class="section"><div class="controls" aria-label="Icon appearance controls">
+        <label class="control"><strong>Weight</strong><input id="icon-weight" type="range" min="200" max="600" step="50" value="400"><output id="weight-value">400</output></label>
+        <label class="control"><input id="icon-fill" type="checkbox"><strong>Filled</strong></label>
+        <span class="control">This preview uses the Material Symbols variable font.</span>
+      </div></section>
+      <section class="section"><div class="section-head"><h2>Workspace and navigation</h2><span class="section-note">Names map to Material Symbol ligatures</span></div><div class="icon-grid">
+        <div class="icon-swatch"><span class="material-symbols-outlined">space_dashboard</span><code>space_dashboard</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">search</span><code>search</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">notifications_none</span><code>notifications_none</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">settings</span><code>settings</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">folder_open</span><code>folder_open</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">folder</span><code>folder</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">article</span><code>article</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">description</span><code>description</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">database</span><code>database</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">table_chart</span><code>table_chart</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">account_tree</span><code>account_tree</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">group</span><code>group</code></div>
+      </div></section>
+      <section class="section"><div class="section-head"><h2>Actions and status</h2><span class="section-note">Keep icon-only actions labeled for assistive tech</span></div><div class="icon-grid">
+        <div class="icon-swatch"><span class="material-symbols-outlined">add</span><code>add</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">more_horiz</span><code>more_horiz</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">chevron_right</span><code>chevron_right</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">expand_more</span><code>expand_more</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">open_in_new</span><code>open_in_new</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">ios_share</span><code>ios_share</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">person_add</span><code>person_add</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">delete</span><code>delete</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">edit</span><code>edit</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">content_copy</span><code>content_copy</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">trending_up</span><code>trending_up</code></div>
+        <div class="icon-swatch"><span class="material-symbols-outlined">check_circle</span><code>check_circle</code></div>
+      </div></section>
+      <p class="footer">Material Symbols are published under Apache 2.0. <a href="https://developers.google.com/fonts/docs/material_symbols" target="_blank" rel="noreferrer">Google’s guide</a> · <a href="https://fonts.google.com/icons" target="_blank" rel="noreferrer">Browse icons</a></p>
+    </div>
+  </main></div>
+  <script src="system.js"></script>
+  <script>
+    const root = document.documentElement;
+    const weight = document.querySelector('#icon-weight');
+    const weightValue = document.querySelector('#weight-value');
+    const fill = document.querySelector('#icon-fill');
+    weight.addEventListener('input', () => { root.style.setProperty('--icon-weight', weight.value); weightValue.value = weight.value; weightValue.textContent = weight.value; });
+    fill.addEventListener('change', () => root.style.setProperty('--icon-fill', fill.checked ? 1 : 0));
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142 40" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Nody wordmark</title>
+  <rect x="2" y="2" width="36" height="36" rx="10" fill="#2878D4"/>
+  <path d="M20 15v5m-9 0h18m-18 0v3m18-3v3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="6.5" y="23" width="9" height="10" rx="2.5" fill="#fff"/>
+  <rect x="24.5" y="23" width="9" height="10" rx="2.5" fill="#fff"/>
+  <rect x="16" y="7" width="8" height="8" rx="2.5" fill="#fff"/>
+  <text x="49" y="29" fill="#252421" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="650" letter-spacing="-1.5">nody</text>
+</svg>

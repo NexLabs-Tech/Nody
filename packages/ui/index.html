@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Nody UI — Design system</title>
+  <link rel="icon" href="logo/nody-icon-dark.png" type="image/png">
+  <link rel="stylesheet" href="system.css">
+</head>
+<body data-page="overview">
+  <div class="system-shell">
+    <aside class="sidebar" id="system-sidebar" aria-label="Design system navigation"></aside>
+    <main class="system-main">
+      <header class="topbar">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="true"><span class="material-symbols-outlined" aria-hidden="true">menu</span></button>
+        <div class="breadcrumb"><span>Nody UI</span><span>/</span><strong>Overview</strong></div>
+        <span class="topbar-meta">Design system · 0.1</span>
+      </header>
+      <div class="page-content">
+        <div class="page-eyebrow">Nody UI · Design system</div>
+        <h1 class="page-title">A workspace for the interface.</h1>
+        <p class="page-lead">Explore the foundations and interface pieces for Nody. Each section has its own page and builds from the shared tokens.</p>
+
+        <section class="section" aria-labelledby="foundations-title">
+          <div class="section-head"><h2 id="foundations-title">Foundations</h2><span class="section-note">Shared visual language</span></div>
+          <div class="catalog-grid">
+            <a class="catalog-card" href="colors.html"><span class="material-symbols-outlined" aria-hidden="true">palette</span><h2>Colors</h2><p>Warm surfaces, text, accent and semantic colors.</p><span class="card-link">Explore colors →</span></a>
+            <a class="catalog-card" href="typography.html"><span class="material-symbols-outlined" aria-hidden="true">text_fields</span><h2>Typography</h2><p>Type scale, hierarchy, sizes and usage examples.</p><span class="card-link">Explore typography →</span></a>
+            <a class="catalog-card" href="logos.html"><span class="material-symbols-outlined" aria-hidden="true">interests</span><h2>Logos</h2><p>Light and dark marks, PNG assets and SVG drafts.</p><span class="card-link">Explore logos →</span></a>
+            <a class="catalog-card" href="icons.html"><span class="material-symbols-outlined" aria-hidden="true">apps</span><h2>Icons</h2><p>Google Material Symbols with weight and fill controls.</p><span class="card-link">Explore icons →</span></a>
+            <a class="catalog-card" href="layout.html"><span class="material-symbols-outlined" aria-hidden="true">view_quilt</span><h2>Layout & tokens</h2><p>Spacing, sizing, radii, elevation and responsive ranges.</p><span class="card-link">Explore layout →</span></a>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="components-title">
+          <div class="section-head"><h2 id="components-title">Components</h2><span class="section-note">Interface building blocks</span></div>
+          <div class="catalog-grid">
+            <a class="catalog-card" href="ctas.html"><span class="material-symbols-outlined" aria-hidden="true">smart_button</span><h2>CTAs</h2><p>Primary, secondary, quiet and destructive actions in useful sizes.</p><span class="card-link">Explore CTAs →</span></a>
+            <a class="catalog-card" href="controls.html"><span class="material-symbols-outlined" aria-hidden="true">tune</span><h2>Controls</h2><p>Inputs, selects, checks, switches, labels and badges.</p><span class="card-link">Explore controls →</span></a>
+            <a class="catalog-card" href="navigation.html"><span class="material-symbols-outlined" aria-hidden="true">account_tree</span><h2>Navigation</h2><p>Workspace switcher, page tree, breadcrumbs and tabs.</p><span class="card-link">Explore navigation →</span></a>
+            <a class="catalog-card" href="blocks.html"><span class="material-symbols-outlined" aria-hidden="true">view_agenda</span><h2>Blocks</h2><p>Page title, text, headings, checklist, callout and code.</p><span class="card-link">Explore blocks →</span></a>
+            <a class="catalog-card" href="databases.html"><span class="material-symbols-outlined" aria-hidden="true">database</span><h2>Databases</h2><p>Properties and table or board views for structured work.</p><span class="card-link">Explore databases →</span></a>
+            <a class="catalog-card" href="charts.html"><span class="material-symbols-outlined" aria-hidden="true">monitoring</span><h2>Charts</h2><p>Simple data visualizations for study progress and workspace activity.</p><span class="card-link">Explore charts →</span></a>
+            <a class="catalog-card" href="states.html"><span class="material-symbols-outlined" aria-hidden="true">progress_activity</span><h2>States</h2><p>Loading, empty, error, success and permission feedback.</p><span class="card-link">Explore states →</span></a>
+            <article class="card"><div class="section-head"><h2>Button preview</h2><span class="section-note">From the CTA page</span></div><div class="button-row"><button class="btn btn-primary"><span class="material-symbols-outlined" aria-hidden="true">add</span> New page</button><button class="btn"><span class="material-symbols-outlined" aria-hidden="true">person_add</span> Invite</button></div></article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="guidelines-title"><div class="section-head"><h2 id="guidelines-title">Guidelines</h2><span class="section-note">Quality and consistency</span></div><div class="catalog-grid"><a class="catalog-card" href="accessibility.html"><span class="material-symbols-outlined" aria-hidden="true">accessibility_new</span><h2>Accessibility</h2><p>Keyboard use, focus, labels, contrast and touch target guidance.</p><span class="card-link">Explore accessibility →</span></a></div></section>
+
+        <section class="section" aria-labelledby="principles-title">
+          <div class="section-head"><h2 id="principles-title">Current direction</h2><span class="section-note">Early product system</span></div>
+          <div class="card-grid">
+            <article class="card"><div class="metric">Surface</div><div style="margin-top:6px;font-size:15px;font-weight:600">Warm and quiet</div><div class="token-value">Paper-like neutrals · subtle separators</div></article>
+            <article class="card"><div class="metric">Action color</div><div style="margin-top:6px;font-size:15px;font-weight:600;color:var(--nody-accent)">Nody blue</div><div class="token-value">One clear primary action at a time</div></article>
+            <article class="card"><div class="metric">Content model</div><div style="margin-top:6px;font-size:15px;font-weight:600">Groups → pages → blocks</div><div class="token-value">Organization and family structures can grow</div></article>
+          </div>
+        </section>
+        <p class="footer">Framework-free HTML previews · Shared values in <code>tokens.css</code> · Icons load from Google Fonts.</p>
+      </div>
+    </main>
+  </div>
+  <script src="system.js"></script>
+</body>
+</html>
